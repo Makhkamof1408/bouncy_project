@@ -1,0 +1,800 @@
+:root {
+  --header-color: #333b46;
+  --text-color: #81868e;
+  --green: #19bd9a;
+  --bg-color: #f3f3f3;
+  --white: var(--white);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none !important;
+  box-sizing: border-box !important;
+  font-family: sans-serif;
+}
+
+span {
+  color: var(--green);
+}
+
+.btn-outline-white {
+  color: var(--white) !important;
+  border: 1px solid var(--white) !important;
+  border-radius: 20px !important;
+  transition: 0.5s;
+}
+
+.btn-outline-white:hover {
+  background: var(--white);
+  color: green !important;
+
+}
+
+a {
+  color: var(--white);
+  display: inline-block;
+}
+
+h2 {
+  color: var(--header-color);
+  letter-spacing: 5px;
+  font-size: 20px !important;
+  font-weight: 300 !important;
+  margin-bottom: 1rem !important;
+}
+
+p {
+  color: var(--text-color);
+  line-height: 25px;
+}
+
+button {
+  border: none;
+}
+
+header {
+  background: url(./images/Bouncy_header01.jpg) center center / cover;
+  width: 100%;
+  height: 100vh;
+}
+
+header ul li a {
+  color: var(--white) !important;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  padding: 5px 18px;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+
+header ul li a:hover {
+  border: 1px solid var(--white);
+  text-shadow: 0 0 1px var(--white);
+}
+
+header .navbar_brand {
+  font-size: 25px;
+  font-weight: 900;
+  animation: miltillash 2s ease infinite;
+}
+
+.header_about {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header_about h1 {
+  font-size: 35px;
+  font-weight: 200;
+  letter-spacing: 12px;
+  word-spacing: 5px;
+}
+
+.header_about p {
+  letter-spacing: 1px;
+  color: white;
+}
+
+/* ABOUT US*/
+.about_us p {
+  color: var(--text-color);
+  line-height: 25px;
+  padding: 1rem 0;
+}
+
+.about_us a {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.about_us .row .col-lg-6:last-child {
+  background: url(./images/Bouncy_03.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+/* ABOUT US DETAILS */
+.details {
+  background: var(--bg-color);
+}
+
+.details .icons i {
+  padding: 12px;
+  background: #81868e;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: var(--white);
+  transition: 0.2s;
+}
+
+.details i.active,
+.details i:hover {
+  background: var(--green);
+}
+
+/* FEATURED */
+.featured {
+  width: 100%;
+  background: var(--bg-color);
+}
+
+.featured .row div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.featured .row img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.featured img:hover {
+  filter: brightness(10%);
+}
+
+.featured .row div:hover h2 {
+  opacity: 1;
+}
+
+.featured .row h2 {
+  position: absolute;
+  color: var(--white);
+  opacity: 0;
+  transition: 0.7s;
+  font-size: 30px !important;
+  margin: 0 !important;
+}
+
+/* SUBMIT NOW */
+.submit_now {
+  background: url(./images/Bouncy-submit_02.jpg);
+}
+
+/* SERVICES */
+.services .row img {
+  margin: 0.5rem;
+}
+
+.services .skills-item {
+  margin: auto;
+  width: 120px;
+  height: 120px;
+  border: 5px solid var(--green);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-color: #034c50;
+  transform: rotate(45deg);
+}
+
+.services .skills-item h3 {
+  color: var(--header-color);
+  font-size: 25px !important;
+  text-align: center;
+  margin: 0 !important;
+  transform: rotate(-45deg);
+}
+
+/* TEAM QUOTES */
+.quotes {
+  background: url(./images/Bouncy-quotes-bg_02.jpg) center center / cover;
+  position: relative;
+  min-height: 390px;
+}
+
+.quotes h2,
+p,
+h4 {
+  color: #b2b3b3 !important;
+}
+
+.quotes .row .col-12:last-child {
+  display: flex;
+  justify-content: center;
+}
+
+/* THE PORTFOLIO */
+.portfolio nav ul li a {
+  color: var(--header-color);
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: 400;
+  transition: 0.5s;
+}
+
+.portfolio nav ul li a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 80%;
+  background: var(--green);
+  margin: auto;
+  margin-top: 10px;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.portfolio nav ul li:hover a::after {
+  opacity: 1;
+}
+
+.portfolio-img {
+  position: relative;
+}
+
+.portfolio-img img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.portfolio-img .img-hover {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.portfolio-img:hover .img-hover {
+  opacity: 1;
+}
+
+.portfolio-img .img-hover h2 {
+  color: var(--green);
+}
+
+.portfolio-img .img-hover h2::after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background: var(--green);
+  display: block;
+  margin-top: 20px;
+}
+
+.portfolio-img .img-hover i {
+  color: var(--white);
+  font-size: 20px;
+}
+
+.img-hover .icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  border-radius: 50%;
+  margin: auto 0.3rem;
+  margin-left: 0;
+}
+
+/* start project */
+.start_project {
+  background: linear-gradient(#19bd99c7, #19bd99c7), url(./images/coffe.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.progressing h2 {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.progres {
+  margin: 2rem 0;
+}
+
+/* THE TEAM CTA  */
+.cta {
+  background: url(./images/Bouncybg_34.jpg) center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* TESTIMONIALS */
+.testimonials {
+  background: var(--bg-color);
+}
+
+.testimonials .row h2 {
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  letter-spacing: normal !important;
+}
+
+.testimonials ol {
+  bottom: -40px;
+}
+
+.testimonials ol li {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--green);
+  margin: auto 8px;
+  bottom: 0 !important;
+}
+
+.testimonials ol li.active {
+  background: var(--green);
+}
+
+/* BLOG */
+.blog {
+  background: url(./images/Bouncybg_36.jpg) center center / cover;
+  background-attachment: fixed;
+}
+
+.blog .title {
+  margin-bottom: 5rem;
+}
+
+.blog .pages {
+  height: 380px;
+  overflow: hidden;
+}
+
+.blog .pages .page {
+  padding: 50px 0;
+}
+
+.blog .pages li {
+  border: 1px solid #b2b3b3;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.blog .pages a {
+  color: #b2b3b3;
+  padding: 0.5rem 1.5rem;
+  animation: miltillash 2s linear infinite;
+}
+
+.blog .pages li:hover a {
+  transition: 1s;
+  transform: rotatex(360deg);
+}
+
+/* OUR PRICE  */
+.price {
+  background: var(--bg-color);
+}
+
+.price-item {
+  overflow: hidden !important;
+  height: 330px;
+  background: var(--white);
+  padding: 0 !important;
+  min-width: 280px !important;
+  margin: 3rem !important;
+}
+
+.price .plan {
+  height: 250px;
+
+}
+
+.price h3 {
+  background: var(--green);
+  font-weight: 700;
+  margin: 0 !important;
+}
+
+.price h4 {
+  font-weight: 900;
+  color: var(--green) !important;
+  font-size: 42px;
+}
+
+.price p {
+  font-size: 20px !important;
+}
+
+.price-item:hover .price_hover {
+  transform: translateY(-100%);
+}
+
+.price-item:hover .plan_header {
+  transform: translateY(-100%);
+}
+
+.plan_header,
+.price_hover {
+  transition: 0.5s;
+}
+
+.price .lets {
+  color: var(--white);
+  font-size: 20px;
+  background: var(--green);
+}
+
+.price_hover p {
+  padding-left: 30px;
+}
+
+/* SUBSCRIBE US */
+.subscribe {
+  background: url(./images/Bouncybg_38.jpg) center center / cover;
+  background-attachment: fixed;
+}
+
+.subscribe input {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: var(--white);
+  border-radius: 3px;
+}
+
+.subscribe button {
+  background: var(--green);
+  border-radius: 1px;
+}
+
+/* CONTACT US */
+.contact {
+  background: var(--bg-color);
+}
+
+.contact .contact-details h3 {
+  font-size: 16px;
+  color: var(--header-color);
+  letter-spacing: 1px;
+}
+
+.contact .contact-item {
+  background: var(--white);
+}
+
+.contact .contact-item p {
+  letter-spacing: 1px;
+}
+
+.contact-img img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+}
+
+.contact .contact-item i {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+}
+
+.contact-form button {
+  background: var(--green);
+  border-radius: 1px;
+}
+
+.contact-form button a {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+/* MAP */
+.map {
+  position: relative;
+  background: url(./images/Bouncybg_51.jpg) center center / cover;
+  height: 500px;
+}
+
+.find-us {
+  background: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1s;
+}
+
+.find-us i {
+  /* transform: rotate(90deg); */
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  padding: 4px 10px;
+  background: var(--green);
+  border-radius: 50%;
+}
+
+.find-us:hover {
+  opacity: 0;
+}
+
+/* FOOTER */
+.footer {
+  background: var(--bg-color);
+}
+
+.footer h1 {
+  font-size: 25px;
+  font-weight: 900;
+}
+
+footer .icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #3b5998;
+  border-radius: 50%;
+  margin: auto 1rem;
+}
+
+footer i {
+  color: var(--white) !important;
+}
+
+@keyframes miltillash {
+  0% {
+    text-shadow: 0 0 0;
+  }
+
+  50% {
+    text-shadow: 0 0 3px var(--white);
+  }
+
+  100% {
+    text-shadow: 0 0 0;
+  }
+}
+
+@keyframes anm {
+  0% {}
+
+  10% {
+    transform: translateY(-100%);
+  }
+
+  25% {
+    transform: translateY(-100%);
+  }
+
+  40% {
+    transform: translateY(-200%);
+  }
+
+  50% {
+    transform: translateY(-200%);
+  }
+
+  60% {
+    transform: translateY(-100%);
+  }
+
+  75% {
+    transform: translateY(-100%);
+  }
+
+  100% {}
+}
+
+
+
+@media (max-width:576px) {
+  .header_about {
+    height: 50vh;
+  }
+
+  h2 {
+    letter-spacing: 2px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .header_about h1 {
+    word-spacing: 1px;
+    letter-spacing: 2px;
+  }
+
+  .about_us .row .col-6 {
+    width: 100% !important;
+  }
+
+  .featured .row {
+    width: 95%;
+    margin: auto;
+  }
+
+  .featured .title {
+    width: 90%;
+    margin: auto;
+  }
+
+  .featured .row .p-0 {
+    margin: 0.5rem 0;
+  }
+
+  .submit_now .row .col-lg-5 {
+    justify-content: start !important;
+  }
+
+  .services .skills .col-4 {
+    transform: scale(0.6);
+  }
+
+  .services .title {
+    margin-bottom: 2rem;
+  }
+
+  .quotes {
+    min-height: 500px;
+  }
+
+  .quotes {
+    align-items: flex-start !important;
+  }
+
+  .quotes img {
+    transform: scale(0.5);
+    position: static;
+  }
+
+  .blog .title {
+    margin-bottom: 2rem;
+  }
+
+  .pages .page {
+    padding: 0 !important;
+  }
+
+  .blog {
+    padding: 0 !important;
+  }
+
+  .blog .pages {
+    height: auto;
+  }
+
+  .blog .page:nth-child(2),
+  .blog .page:nth-child(3) {
+    display: none;
+  }
+
+  .subscribe button {
+    width: 50% !important;
+    margin-top: 30px;
+    padding: 9px 0;
+  }
+
+  footer .icon {
+    margin: auto 0.5rem;
+  }
+  footer .icon, .footer .icon *{
+    transform: scale(0.8);
+  }
+}
+
+@media (min-width:576px) and (max-width:720px) {
+  .subscribe button {
+    padding: 9px 0;
+  }
+
+  .blog .page:nth-child(2),
+  .blog .page:nth-child(3) {
+    display: none;
+  }
+
+  .blog .pages {
+    overflow: visible;
+  }
+}
+
+@media (min-width:720px) and (max-width:1200px) {
+  .quotes img {
+    transform: scale(0.8);
+  }
+
+  .quotes {
+    align-items: start;
+  }
+
+  .blog .title {
+    margin-bottom: 0 !important;
+  }
+
+  .subscribe button {
+    height: 100%;
+  }
+
+  .subscribe .row {
+    width: 70% !important;
+  }
+
+  .blog .page:nth-child(2),
+  .blog .page:nth-child(3) {
+    display: none;
+  }
+
+  .blog .pages {
+    overflow: visible;
+  }
+}
+
+@media (min-width:1200px) {
+  html {
+    max-width: 1900px;
+    margin: auto;
+  }
+
+  header {
+    max-height: 1000px;
+    overflow: hidden;
+  }
+
+  .header_about {
+    max-height: 800px;
+  }
+
+  .quotes .row .col-12:last-child img {
+    position: absolute;
+    top: -30%;
+  }
+
+  .blog .pages .page {
+    animation: anm 24s ease infinite;
+  }
+
+  .subscribe button {
+    height: 100%;
+  }
+}
